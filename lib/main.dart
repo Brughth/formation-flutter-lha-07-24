@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/facebook_screen.dart';
 import 'package:flutter_application_2/home_screen.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       themeMode: ThemeMode.light,
-      home: HomeScreen(),
+      home: const FacebookScreen(),
     );
   }
 }
