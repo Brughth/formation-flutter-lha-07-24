@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_2/bmi_calculator_screen.dart';
 import 'package:flutter_application_2/counter_screen.dart';
 import 'package:flutter_application_2/facebook_screen.dart';
+import 'package:flutter_application_2/google_play_ui/google_play_home_screen.dart';
 import 'package:flutter_application_2/home_screen.dart';
 import 'package:flutter_application_2/instagram_screem.dart';
 import 'package:flutter_application_2/post/presentation/pages/post_list_screen.dart';
+import 'package:flutter_application_2/remote_jobs/presentation/pages/job_list_screen.dart';
 import 'package:flutter_application_2/universities/presentation/pages/university_list_screen.dart';
 
 class ApplicationScreen extends StatelessWidget {
@@ -103,6 +105,31 @@ class ApplicationScreen extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) {
                     return const PostListScreen();
+                  },
+                ),
+              );
+            },
+          ),
+          const Divider(),
+          ListTile(
+            title: const Text("Remote Jobs"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const JobListScreen();
+                  },
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text("Google Play Home"),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const GooglePlayHomeScreen();
                   },
                 ),
               );
