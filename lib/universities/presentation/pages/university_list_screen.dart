@@ -26,7 +26,7 @@ class _UniversityListScreenState extends State<UniversityListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Universities"),
+        title: const Text("Universitiess"),
       ),
       body: FutureBuilder<List<UniversityModel>>(
         future: _futureUniversities,

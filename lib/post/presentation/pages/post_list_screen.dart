@@ -23,7 +23,7 @@ class _PostListScreenState extends State<PostListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Posts"),
+        title: const Text("Postss"),
       ),
       body: FutureBuilder<List<Post>>(
         future: repository.fetchPosts(),

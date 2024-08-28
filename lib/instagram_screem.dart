@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_application_2/counter_with_cubic/logic/cubit/counter_cubit.dart';
+import 'package:flutter_application_2/main.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class InstagramScreen extends StatelessWidget {
   const InstagramScreen({super.key});
@@ -163,6 +166,10 @@ class InstagramScreen extends StatelessWidget {
                 )
               ],
             ),
+          ),
+          Text(
+            "${context.read<CounterCubit>().state.counter}",
+            style: Theme.of(context).textTheme.displayLarge,
           )
         ],
       ),
